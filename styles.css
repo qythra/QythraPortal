@@ -396,11 +396,26 @@ h2 {
     display: inline-block;
   }
 
-  .nav-wrap,
+  .nav-wrap {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+  }
+
   .footer-wrap,
   .strip-inner,
   .cta-box {
     flex-direction: column;
     align-items: stretch;
+  }
+
+  .brand-logo {
+    max-width: 180px;
+    height: auto;
+  }
+
+  .menu-toggle {
+    margin-left: auto;
   }
 }
